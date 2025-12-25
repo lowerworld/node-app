@@ -1,0 +1,31 @@
+{
+  "name": "node-app",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "packageManager": "pnpm@10.26.2",
+  "scripts": {
+    "dev": "NODE_ENV=development tsx watch --clear-screen=false src/index.ts",
+    "build": "tsdown",
+    "build:docker": "docker build .",
+    "start": "NODE_ENV=production node --enable-source-maps dist/index.mjs",
+    "format": "biome format",
+    "lint:biome": "biome lint",
+    "lint:check-types": "tsc --noEmit",
+    "lint": "turbo run lint:biome lint:check-types --continue --log-order=grouped"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.10",
+    "@tsconfig/node22": "^22.0.5",
+    "@types/node": "^22.19.3",
+    "tsdown": "^0.18.3",
+    "tsx": "^4.21.0",
+    "turbo": "^2.7.2",
+    "typescript": "^5.9.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}
