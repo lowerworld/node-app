@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/turbo/schema.json",
+  "tasks": {
+    "lint:biome": {
+      "cache": false
+    },
+    "lint:check-types": {
+      "cache": false
+    }
+  },
+  "remoteCache": {
+    "enabled": false
+  }
+}
