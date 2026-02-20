@@ -1,0 +1,10 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["eslint", "typescript", "unicorn", "oxc", "node"],
+  "rules": {
+    "eslint/eqeqeq": "warn",
+    "unicorn/prefer-node-protocol": "warn",
+    "react/button-has-type": "warn",
+    "react/rules-of-hooks": "warn"
+  }
+}
