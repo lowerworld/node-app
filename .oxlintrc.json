@@ -1,0 +1,11 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "options": { "typeAware": true, "typeCheck": true },
+  "plugins": ["eslint", "typescript", "unicorn", "oxc", "node"],
+  "rules": {
+    "eslint/eqeqeq": "warn",
+    "unicorn/prefer-node-protocol": "warn",
+    "react/button-has-type": "warn",
+    "react/rules-of-hooks": "warn"
+  }
+}

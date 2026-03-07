@@ -1,0 +1,23 @@
+{
+  "editor.formatOnSave": true,
+  "javascript.format.enable": false,
+  "oxc.requireConfig": true,
+  "oxc.typeAware": true,
+  "typescript.format.enable": false,
+  "[javascript]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[json]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[jsonc]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[typescript]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  }
+}
