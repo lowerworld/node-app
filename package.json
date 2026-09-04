@@ -1,0 +1,25 @@
+{
+  "name": "node-app",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "NODE_ENV=development tsx watch --clear-screen=false src/index.ts",
+    "build": "tsdown",
+    "start": "NODE_ENV=production node --enable-source-maps dist/index.mjs",
+    "docker:build": "docker build . --tag node-app",
+    "docker:start": "docker run --rm node-app",
+    "format": "oxfmt",
+    "lint": "oxlint"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "oxfmt": "^0.65.0",
+    "oxlint": "^1.80.0",
+    "oxlint-tsgolint": "^7.0.2001",
+    "tsdown": "^0.22.14",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  },
+  "packageManager": "pnpm@11.24.0"
+}
